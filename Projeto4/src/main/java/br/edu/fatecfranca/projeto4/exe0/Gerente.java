@@ -9,12 +9,12 @@ public class Gerente extends Funcionario {
     private float bonificacao;
     
     public Gerente(){
-        super();
+        super();//chama o construtor da superclasse
     }
     
     public Gerente(float bonificacao, int codigo, String nome, String cpf, 
             float salario, float cargaHoraria) {
-        super(codigo, nome, cpf, salario, cargaHoraria);
+        super(codigo, nome, cpf, salario, cargaHoraria);//chama o construtor da superclasse
         this.bonificacao = bonificacao;
     }
 
@@ -29,5 +29,10 @@ public class Gerente extends Funcionario {
     @Override //anotação override porque estamos fazendo anulação ou sobresvrevendo
     public String toString() {
         return "Gerente{" + super.toString() + "bonificacao=" + bonificacao + '}';
+    }
+    
+    @Override
+    public float calculaSalario(){
+        return this.salario + this.bonificacao;
     }
 }

@@ -9,6 +9,8 @@ package br.edu.fatecfranca.projeto4.exe0;
  * @author 1090482111037
  */
 public class Funcionario {
+    //As variavies devem ser com visibilidade protectec
+    //para permirtir que as subclasses herdem essas
     protected int codigo;
     protected String nome, cpf;
     protected float salario, cargaHoraria;
@@ -69,5 +71,9 @@ public class Funcionario {
     @Override
     public String toString() {
         return "Funcionario{" + "codigo=" + codigo + ", nome=" + nome + ", cpf=" + cpf + ", salario=" + salario + ", cargaHoraria=" + cargaHoraria + '}';
+    }
+    
+    public float calculaSalario(){
+        return this.salario;
     }
 }

@@ -19,6 +19,5 @@ public class Filho extends Pai {
         this.imoveis = "Nenhum, ele é pobre XD";
         this.namorade = "tenho duas";
         this.sobrenome = "Oliveira";
-        
     }
 }
