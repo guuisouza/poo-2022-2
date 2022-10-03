@@ -41,4 +41,10 @@ public final class Computador {
     public void upgradeRam(int x){
         this.setMemoria(this.memoria + x);
     }   
+
+    @Override
+    public String toString() {
+        return "Computador{" + "modo=" + modo + ", memoria=" + memoria + '}';
+    }
+    
 }

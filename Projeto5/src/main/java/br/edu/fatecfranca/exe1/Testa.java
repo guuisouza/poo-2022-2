@@ -15,9 +15,11 @@ public class Testa {
      */
     public static void main(String[] args) {
         System.out.println("Computador antes do upgrade: ");
-        Computador obj1 = new Computador("Desligado", 4);
+        Computador obj1 = new Computador("Desligado", 8);
+        System.out.println(obj1.toString());
+        System.out.println("Computador após upgrade: ");
         obj1.upgradeRam(8);
-        System.out.println(obj1); 
+        System.out.println(obj1.toString()); 
     }
     
 }
